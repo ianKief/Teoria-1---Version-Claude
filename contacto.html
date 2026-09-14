@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto · La Mesa Criolla</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="cabecera">
+    <div class="cabecera-interior">
+      <div class="marca">
+        <a href="index.html">
+          <span class="nombre-sitio">La Mesa Criolla</span>
+          <span class="lema">Reseñas de juegos de mesa argentinos</span>
+        </a>
+      </div>
+      <nav class="nav-principal" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="quienes-somos.html">Quiénes somos</a></li>
+          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="principal">
+    <h1 class="seccion-titulo">Contacto</h1>
+    <p class="introduccion-pagina">
+      ¿Querés sugerir un juego, avisarnos de un error en una reseña o
+      proponer una colaboración? Escribinos por el formulario o por
+      cualquiera de estos medios.
+    </p>
+
+    <div class="datos-contacto">
+      <div>
+        <h3>Correo electrónico</h3>
+        <p><a href="mailto:contacto@lamesacriolla.com.ar">contacto@lamesacriolla.com.ar</a></p>
+      </div>
+      <div>
+        <h3>Ubicación</h3>
+        <p>Buenos Aires, Argentina</p>
+      </div>
+    </div>
+
+    <h2 class="seccion-titulo">Formulario de contacto</h2>
+    <form class="formulario-contacto" action="mailto:contacto@lamesacriolla.com.ar" method="get">
+
+      <div class="campo">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required />
+      </div>
+
+      <div class="campo">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="campo">
+        <label for="asunto">Asunto</label>
+        <select id="asunto" name="asunto">
+          <option value="sugerencia">Sugerir un juego</option>
+          <option value="correccion">Corregir una reseña</option>
+          <option value="colaboracion">Propuesta de colaboración</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+      </div>
+
+      <button type="submit" class="boton">Enviar mensaje</button>
+    </form>
+  </main>
+
+  <footer class="pie">
+    <p>&copy; 2026 La Mesa Criolla. Sitio de reseñas de juegos de mesa argentinos.</p>
+  </footer>
+
+</body>
+</html>
